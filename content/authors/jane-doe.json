@@ -1,0 +1,11 @@
+{
+  "name": "Jane Doe",
+  "bio": "Open source enthusiast and web developer. Organizer of local JS meetups.",
+  "social": {
+    "github": "janedoe",
+    "twitter": "janedoe",
+    "linkedin": "janedoe",
+    "website": "https://janedoe.dev"
+  },
+  "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop"
+}

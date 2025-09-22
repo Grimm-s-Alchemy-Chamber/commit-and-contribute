@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import VisualEditsMessenger from "../visual-edits/VisualEditsMessenger";
 import ErrorReporter from "@/components/ErrorReporter";
 import Script from "next/script";
 import Header from "@/components/site/Header";
@@ -31,7 +30,6 @@ export default function RootLayout({
         />
         <Header />
         <main>{children}</main>
-        <VisualEditsMessenger />
       </body>
     </html>
   );

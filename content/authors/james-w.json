@@ -1,0 +1,11 @@
+{
+    "name": "James Wilson",
+    "bio": "Security engineer and ethical hacker. Sharing insights on web security, penetration testing, and best practices.",
+    "social": {
+        "github": "jameswilson",
+        "twitter": "jamescybersec",
+        "linkedin": "james-wilson-security",
+        "website": "https://jameswilson.security"
+    },
+    "avatar": "https://images.unsplash.com/photo-1507120878965-54b2d3939100?q=80&w=800&auto=format&fit=crop"
+}

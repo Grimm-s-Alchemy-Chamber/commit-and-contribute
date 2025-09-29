@@ -338,7 +338,7 @@ function getPayloadConfigFromPayload(
         ] as string
     }
 
-    return configLabelKey in config
+        return configLabelKey in config
         ? config[configLabelKey]
         : config[key as keyof typeof config]
 }

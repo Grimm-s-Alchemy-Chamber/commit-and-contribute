@@ -1,0 +1,11 @@
+{
+    "name": "Michael Chen",
+    "bio": "Backend architect specializing in Node.js, Python, and cloud infrastructure. Love building scalable APIs.",
+    "social": {
+        "github": "michaelchen",
+        "twitter": "mikechenbackend",
+        "linkedin": "michael-chen-architect",
+        "website": "https://michaelchen.io"
+    },
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop"
+}

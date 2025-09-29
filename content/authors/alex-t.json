@@ -1,0 +1,11 @@
+{
+    "name": "Alex Thompson",
+    "bio": "Data scientist and machine learning engineer. Writing about AI, Python, and data visualization.",
+    "social": {
+        "github": "alexthompson",
+        "twitter": "alexdatascience",
+        "linkedin": "alex-thompson-ml",
+        "website": "https://alexthompson.ai"
+    },
+    "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop"
+}

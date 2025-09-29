@@ -1,0 +1,11 @@
+{
+    "name": "Lisa Wang",
+    "bio": "Mobile developer building cross-platform apps with React Native and Flutter. Tech blogger and speaker.",
+    "social": {
+        "github": "lisawang",
+        "twitter": "lisamobiledev",
+        "linkedin": "lisa-wang-mobile",
+        "website": "https://lisawang.dev"
+    },
+    "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop"
+}

@@ -3,6 +3,7 @@ import "./globals.css";
 import ErrorReporter from "@/components/ErrorReporter";
 import Script from "next/script";
 import Header from "@/components/site/Header";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Hacktoberfest Community Blog",
@@ -28,7 +29,9 @@ export default function RootLayout({
           data-debug="true"
           data-custom-data='{"appName": "YourApp", "version": "1.0.0", "greeting": "hi"}'
         />
-        <Header />
+        <Suspense fallback={null}>
+          <Header />
+        </Suspense>
         <main>{children}</main>
       </body>
     </html>

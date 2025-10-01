@@ -126,7 +126,7 @@ export const SpotlightCarousel = ({ authors }: SpotlightCarouselProps) => {
                     >
                         <div className="h-20 w-20 overflow-hidden rounded-full bg-secondary shadow-sm">
                             {getAuthorAvatar(author) ? (
-                                // eslint-disable-next-line @next/next/no-img-element
+                                
                                 <img
                                     src={getAuthorAvatar(author)!}
                                     alt={author.name}

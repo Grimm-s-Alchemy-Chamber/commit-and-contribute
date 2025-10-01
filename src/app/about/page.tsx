@@ -1,7 +1,7 @@
 export default function AboutPage() {
     return (
         <div className="mx-auto max-w-3xl px-4 sm:px-6 py-8">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
+            
             <img
                 src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop"
                 alt="Hacktoberfest community"

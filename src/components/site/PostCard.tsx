@@ -10,7 +10,7 @@ export default function PostCard({ post }: { post: Post }) {
     return (
         <Card className="overflow-hidden hover:shadow-md transition-shadow">
             {post.data.cover ? (
-                // eslint-disable-next-line @next/next/no-img-element
+                
                 <img
                     src={post.data.cover}
                     alt="Cover"

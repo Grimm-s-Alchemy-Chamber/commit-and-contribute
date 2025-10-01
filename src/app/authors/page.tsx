@@ -13,7 +13,7 @@ export default function AuthorsPage() {
           {authors.map((a) => (
             <li key={a.slug} className="rounded-lg border p-4 hover:shadow-sm transition-shadow">
               <Link href={`/authors/${slugify(a.name)}`} className="flex items-center gap-3">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
+                
                 <img src={a.avatar || `https://source.unsplash.com/80x80/?portrait`} alt={a.name} className="h-12 w-12 rounded-full object-cover" />
                 <div>
                   <div className="font-medium">{a.name}</div>

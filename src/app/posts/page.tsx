@@ -15,7 +15,7 @@ export default async function PostPage({ params }: { params: { slug: string } })
         <h1 className="mb-2">{post.data.title}</h1>
         <p className="text-muted-foreground !mt-0">{post.data.description}</p>
         {post.data.cover ? (
-          // eslint-disable-next-line @next/next/no-img-element
+          
           <img src={post.data.cover} alt="Cover" className="w-full rounded-lg shadow mt-4" />
         ) : null}
         <div className="mt-4 text-sm text-muted-foreground">

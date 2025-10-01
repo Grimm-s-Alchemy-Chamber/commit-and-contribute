@@ -1,9 +1,13 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { remark } from "remark";
-import html from "remark-html";
-import gfm from "remark-gfm";
+import { unified } from "unified";
+import remarkRehype from "remark-rehype";
+import remarkParse from "remark-parse";
+import rehypeHighlight from "rehype-highlight"; // <-- Add this import
+import rehypeRaw from "rehype-raw"; // <-- Add this import (optional, but recommended)
+import rehypeStringify from "rehype-stringify"; // <-- Use this instead of remark-html
+import remarkGfm from "remark-gfm";
 
 export type PostFrontmatter = {
     title: string;
@@ -54,7 +58,14 @@ export function getPostBySlug(slug: string): Post | null {
 }
 
 export async function renderPostToHtml(post: Post): Promise<Post> {
-    const processed = await remark().use(gfm).use(html).process(post.content);
+    const processed = await unified()
+        .use(remarkParse)
+        .use(remarkGfm)
+        .use(remarkRehype, { allowDangerousHtml: true })
+        .use(rehypeRaw)
+        .use(rehypeHighlight) // <-- Add this plugin for syntax highlighting
+        .use(rehypeStringify) // <-- Use this to convert to HTML string
+        .process(post.content);
     return { ...post, html: processed.toString() };
 }
 
@@ -81,6 +92,9 @@ export function listAuthors(): Author[] {
             const slug = f.replace(/\.json$/i, "");
             const raw = fs.readFileSync(path.join(AUTHORS_DIR, f), "utf8");
             const json = JSON.parse(raw);
+            if (!json.avatar && json.social?.github) {
+                json.avatar = `https://github.com/${json.social.github}.png`;
+            }
             return { slug, ...json } as Author;
         });
 }
@@ -89,6 +103,9 @@ export function getAuthorBySlug(slug: string): Author | null {
     const filePath = path.join(AUTHORS_DIR, `${slug}.json`);
     if (!fs.existsSync(filePath)) return null;
     const json = JSON.parse(fs.readFileSync(filePath, "utf8"));
+    if (!json.avatar && json.social?.github) {
+        json.avatar = `https://github.com/${json.social.github}.png`;
+    }
     return { slug, ...json } as Author;
 }
 

@@ -10,7 +10,7 @@ export default function AuthorPage({ params }: { params: { slug: string } }) {
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6 py-8">
       <div className="flex items-start gap-4 mb-6">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
+        
         <img src={author.avatar || `https://source.unsplash.com/160x160/?portrait`} alt={author.name} className="h-20 w-20 rounded-full object-cover" />
         <div>
           <h1 className="text-2xl font-semibold">{author.name}</h1>

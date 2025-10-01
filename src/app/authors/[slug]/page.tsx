@@ -3,14 +3,18 @@ import Link from "next/link";
 import { getAuthorBySlug, postsByAuthor } from "@/lib/content";
 import PostCard from "@/components/site/PostCard";
 
-export default async function AuthorPage({ params }: { params: { slug: string } }) {
-  const author = getAuthorBySlug(params.slug);
+// ✅ FIX: Type params as Promise<{ slug: string }>
+export default async function AuthorPage({ params }: { params: Promise<{ slug: string }> }) {
+  // ✅ FIX: Await the params Promise to get the actual value
+  const resolvedParams = await params;
+  const author = getAuthorBySlug(resolvedParams.slug);
   if (!author) return notFound();
-  const posts = postsByAuthor(params.slug);
+  const posts = postsByAuthor(resolvedParams.slug);
+
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6 py-8">
       <div className="flex items-start gap-4 mb-6">
-
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={author.avatar || `https://source.unsplash.com/160x160/?portrait`} alt={author.name} className="h-20 w-20 rounded-full object-cover" />
         <div>
           <h1 className="text-2xl font-semibold">{author.name}</h1>
@@ -31,7 +35,6 @@ export default async function AuthorPage({ params }: { params: { slug: string } 
           </div>
         </div>
       </div>
-
       <h2 className="text-xl font-semibold mb-4">Posts by {author.name}</h2>
       {posts.length === 0 ? (
         <p className="text-muted-foreground">No posts yet.</p>

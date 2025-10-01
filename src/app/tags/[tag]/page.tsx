@@ -2,8 +2,9 @@ import Link from "next/link";
 import PostCard from "@/components/site/PostCard";
 import { postsByTag } from "@/lib/content";
 
-export default function TagDetailPage({ params }: { params: { tag: string } }) {
-  const decoded = decodeURIComponent(params.tag);
+export default async function TagDetailPage({ params }: { params: Promise<{ tag: string }> }) {
+  const resolvedParams = await params;
+  const decoded = decodeURIComponent(resolvedParams.tag);
   const posts = postsByTag(decoded);
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6 py-8">

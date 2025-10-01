@@ -90,6 +90,27 @@ social:
    - Add code blocks with triple backticks
    - Include links, lists, and images as needed
 
+#### Adding Images to Your Post
+
+You can add images in two ways: as a cover image or within your content.
+
+1.  **Cover Image (Frontmatter)**
+    - Use the `cover` field in the frontmatter.
+    - You can use a full URL to a remote image or a path to a local image.
+    - Example (Remote): `cover: "https://images.unsplash.com/photo-1544005313-94ddf0286df2"`
+    - Example (Local): `cover: "/images/my-cover-image.png"`
+
+2.  **Content Images (Markdown)**
+    - Use standard Markdown syntax: `!Alt Text`.
+    - **Local Images**: Place your image files in the `/public/images/` directory. Then, reference them with a root-relative path:
+      ```markdown
+      ![My Awesome Diagram](/images/my-diagram.png)
+      ```
+    - **Remote Images**: You can use a full URL to an image from any website. The project is configured to support images from all domains.
+      ```markdown
+      ![A photo from Unsplash](https://images.unsplash.com/photo-1544005313-94ddf0286df2)
+      ```
+
 > ✅ **Post ideas**: Tutorials, reflections, “lessons learned,” open-source tips, beginner guides.
 
 ---
@@ -118,7 +139,6 @@ social:
 > 🔹 **Notes**:
 > - `avatar` is optional — if omitted, we’ll try to use your GitHub avatar
 > - Only include social fields you’re comfortable sharing
-> - Use your **actual GitHub username** (not `@` or full URL) for `github`
 
 ---
 

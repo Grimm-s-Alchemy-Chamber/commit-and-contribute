@@ -24,7 +24,7 @@ export default function Header() {
             <div className="mx-auto max-w-6xl px-4 sm:px-6">
                 <div className="flex h-16 items-center justify-between gap-3">
                     <div className="flex items-center gap-6">
-                        <Link href="/" className="font-semibold text-lg">Hacktoberfest Blog</Link>
+                        <Link href="/" className="font-semibold text-lg">Commit & Contribute</Link>
                         <nav className="hidden md:flex items-center gap-4 text-sm text-muted-foreground">
                             <Link href="/blog" className="hover:text-foreground">Blog</Link>
                             <Link href="/tags" className="hover:text-foreground">Tags</Link>

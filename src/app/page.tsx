@@ -58,7 +58,7 @@ export default async function Home() {
               Read Posts
             </Link>
             <a
-              href="https://github.com/"
+              href="https://github.com/Grimm-s-Alchemy-Chamber/commit-and-contribute"
               target="_blank"
               rel="noreferrer"
               className="inline-flex h-10 items-center rounded-md border px-5 text-sm font-medium hover:bg-accent"
@@ -92,7 +92,7 @@ export default async function Home() {
         <div className="flex items-center justify-between">
           <h3 className="text-xl font-semibold">Contributor Spotlight</h3>
           <a
-            href="https://github.com/"
+            href="https://github.com/Grimm-s-Alchemy-Chamber/commit-and-contribute/"
             target="_blank"
             rel="noreferrer"
             className="text-sm font-medium underline-offset-4 hover:underline"
@@ -147,7 +147,7 @@ export default async function Home() {
           Contribute a post and become part of the community.
         </p>
         <a
-          href="https://github.com/"
+          href="https://github.com/Grimm-s-Alchemy-Chamber/commit-and-contribute/"
           target="_blank"
           rel="noreferrer"
           className="mt-4 inline-flex h-10 items-center rounded-md bg-foreground px-6 text-sm font-medium text-background hover:opacity-90"
@@ -163,7 +163,7 @@ export default async function Home() {
             <Link href="/">Home</Link>
             <Link href="/about">About</Link>
             <Link href="/contact">Contact</Link>
-            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub Repo</a>
+            <a href="https://github.com/Grimm-s-Alchemy-Chamber/commit-and-contribute" target="_blank" rel="noreferrer">GitHub Repo</a>
             <Link href="/">License</Link>
           </nav>
           <div>An open-source community project.</div>

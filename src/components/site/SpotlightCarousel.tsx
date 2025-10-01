@@ -82,7 +82,7 @@ export const SpotlightCarousel = ({ authors }: SpotlightCarouselProps) => {
         // Only scroll if there are more items than can be displayed at once (we assume 8) and we have duplicated them
         if (!el || authors.length <= 8) return;
 
-        let intervalId: NodeJS.Timeout | null = null;
+        let intervalId: ReturnType<typeof setInterval> | null = null;
 
         const scrollNext = () => {
             const firstItem = itemRefs.current[0];
@@ -121,7 +121,7 @@ export const SpotlightCarousel = ({ authors }: SpotlightCarouselProps) => {
                     <Link
                         key={`${author.slug}-${idx}`}
                         href={`/authors/${author.slug}`}
-                        ref={(el) => (itemRefs.current[idx] = el)}
+                        ref={(el) => { itemRefs.current[idx] = el; }}
                         className="flex w-28 shrink-0 snap-start flex-col items-center rounded-lg p-2 transition-transform duration-200 will-change-transform hover:bg-accent"
                     >
                         <div className="h-20 w-20 overflow-hidden rounded-full bg-secondary shadow-sm">

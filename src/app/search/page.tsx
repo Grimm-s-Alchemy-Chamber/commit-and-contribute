@@ -1,8 +1,13 @@
 import PostCard from "@/components/site/PostCard";
 import { searchPosts } from "@/lib/content";
 
-export default function SearchPage({ searchParams }: { searchParams: { q?: string } }) {
-  const q = (searchParams.q ?? "").toString();
+export default async function SearchPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}) {
+  const resolvedSearchParams = await searchParams;
+  const q = (Array.isArray(resolvedSearchParams.q) ? resolvedSearchParams.q[0] : resolvedSearchParams.q) ?? "";
   const results = q ? searchPosts(q) : [];
 
   return (

@@ -3,14 +3,18 @@ import Link from "next/link";
 import { getAuthorBySlug, postsByAuthor } from "@/lib/content";
 import PostCard from "@/components/site/PostCard";
 
-export default function AuthorPage({ params }: { params: { slug: string } }) {
+interface PageProps {
+  params: { slug: string };
+}
+
+export default function AuthorPage({ params }: PageProps) {
   const author = getAuthorBySlug(params.slug);
   if (!author) return notFound();
   const posts = postsByAuthor(params.slug);
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6 py-8">
       <div className="flex items-start gap-4 mb-6">
-        
+
         <img src={author.avatar || `https://source.unsplash.com/160x160/?portrait`} alt={author.name} className="h-20 w-20 rounded-full object-cover" />
         <div>
           <h1 className="text-2xl font-semibold">{author.name}</h1>

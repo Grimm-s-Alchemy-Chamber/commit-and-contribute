@@ -3,11 +3,7 @@ import Link from "next/link";
 import { getAuthorBySlug, postsByAuthor } from "@/lib/content";
 import PostCard from "@/components/site/PostCard";
 
-interface PageProps {
-  params: { slug: string };
-}
-
-export default function AuthorPage({ params }: PageProps) {
+export default async function AuthorPage({ params }: { params: { slug: string } }) {
   const author = getAuthorBySlug(params.slug);
   if (!author) return notFound();
   const posts = postsByAuthor(params.slug);

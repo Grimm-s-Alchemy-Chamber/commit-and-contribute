@@ -3,12 +3,7 @@ title: "Guide to Visualizing Data for AI with Matplotlib"
 description: "Learn the fundamentals of data visualization for AI and machine learning using Python's Matplotlib library. This guide covers essential plots like histograms, scatter plots, and heatmaps."
 tags:
   [
-    "Python",
-    "Matplotlib",
-    "Data Visualization",
-    "AI",
-    "Machine Learning",
-    "Beginner",
+    "Beginner", "OpenSource", "AI", "hacktoberfest"
   ]
 author:
   name: "Lutfi Hakim"

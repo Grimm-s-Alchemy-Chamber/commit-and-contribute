@@ -3,7 +3,7 @@ title: "Python Lists: Basics and Operations"
 description: "Discover list creation, indexing, and methods like append or sort."
 tags: ["Beginner", "OpenSource", "Python"]
 author:
-  name: "Lutfi Hakim"
+  name: "hakimlutfi46"
 date: "2025-10-02"
 cover: "https://i.imgur.com/B032S20.jpeg"
 social:

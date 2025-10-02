@@ -1,12 +1,9 @@
 ---
 title: "Guide to Visualizing Data for AI with Matplotlib"
 description: "Learn the fundamentals of data visualization for AI and machine learning using Python's Matplotlib library. This guide covers essential plots like histograms, scatter plots, and heatmaps."
-tags:
-  [
-    "Beginner", "OpenSource", "AI", "hacktoberfest"
-  ]
+tags: ["Beginner", "OpenSource", "AI", "hacktoberfest"]
 author:
-  name: "Lutfi Hakim"
+  name: "hakimlutfi46"
 date: "2025-10-02"
 cover: "https://i.imgur.com/Rgkp0Bq.jpeg"
 social:
@@ -87,6 +84,7 @@ plt.ylabel('Exam Score')
 
 plt.show()
 ```
+
 ![image](https://i.imgur.com/TBCRYZP.png)
 
 As expected, we can see a positive correlation: as the hours studied increase, the exam score tends to increase as well. This is a vital insight before building a predictive model.
@@ -113,10 +111,12 @@ plt.ylim(80, 100) # Set y-axis limits for better comparison
 
 plt.show()
 ```
+
 ![image](https://i.imgur.com/QVcBlBG.png)
 
 This chart makes it incredibly easy to see that Random Forest performed the best, while Logistic Regression had the lowest accuracy among the tested models.
 
 ### Conclusion
+
 Data visualization isn't just about making pretty charts; it's a fundamental part of the AI and Machine Learning workflow. By using simple yet powerful tools like Matplotlib, you can gain deep insights into your data, which leads to better feature engineering, model selection, and ultimately, more accurate and reliable results.
 Start with these basic plots histograms, scatter plots, and bar charts and you'll be well on your way to making data driven decisions in your next AI project!

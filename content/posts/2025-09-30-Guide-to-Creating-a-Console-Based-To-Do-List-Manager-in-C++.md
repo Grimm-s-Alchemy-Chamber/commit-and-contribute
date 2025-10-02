@@ -1,4 +1,3 @@
-
 ---
 title: "Guide to Creating a Console-Based To-Do List Manager in C++"
 description: "Step-by-step tutorial on building a to-do list app using vectors for task storage, file I/O for persistence, and functions for adding, viewing, and deleting tasks."

@@ -2,7 +2,8 @@
 title: "Getting Started with Python for AI"
 description: "Your complete guide to setting up Python and installing essential libraries like NumPy, pandas, and Scikit-learn for Artificial Intelligence tasks."
 tags: ["Beginner", "OpenSource", "AI", "Python", "hacktoberfest"]
-author: "prathamesh424"
+author:
+  name: "prathamesh424"
 date: "2025-10-01"
 social:
   github: "prathamesh424"

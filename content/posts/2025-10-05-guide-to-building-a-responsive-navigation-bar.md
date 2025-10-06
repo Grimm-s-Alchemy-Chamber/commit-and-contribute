@@ -3,8 +3,9 @@ title: "Guide to Building a Responsive Navigation Bar"
 description: "Learn how to create a responsive navigation bar using HTML and CSS, complete with hover effects and mobile-friendly design."
 tags: ["Beginner", "OpenSource", "Web Development"]
 author:
-name: "afnan006"
+  name: "afnan006"
 date: "2025-10-05"
+cover: "https://cdn.dribbble.com/userupload/44163181/file/original-11b913908986c793671abd438a320904.png?resize=1504x988&vertical=center"
 social:
   github: "afnan006"
   linkedin: "afnan006"

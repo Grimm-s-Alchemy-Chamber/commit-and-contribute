@@ -3,11 +3,11 @@ title: "Guide to Building a Responsive Navigation Bar"
 description: "Learn how to create a responsive navigation bar using HTML and CSS, complete with hover effects and mobile-friendly design."
 tags: ["Beginner", "OpenSource", "Web Development"]
 author:
-name: "Afnan Ahmed"
+name: "afnan006"
 date: "2025-10-05"
 social:
-  github: "https://github.com/afnan006"
-  linkedin: "https://www.linkedin.com/in/afnan006/"
+  github: "afnan006"
+  linkedin: "afnan006"
 ---
 
 When I first started building websites, navigation bars seemed like one of those things that should be simple. After all, it's just a list of links, right? Well, not quite. A good navigation bar needs to work on every device, look clean, and be easy to use. Let me walk you through how to build one from scratch.

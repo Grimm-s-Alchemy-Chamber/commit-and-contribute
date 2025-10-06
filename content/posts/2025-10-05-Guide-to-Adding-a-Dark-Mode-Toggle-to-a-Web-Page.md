@@ -2,7 +2,8 @@
 title: "Guide to Adding a Dark Mode Toggle to a Web Page"
 description: "Instructions for implementing a dark mode toggle using HTML, CSS for themes, and JavaScript for switching styles."
 tags: ["Beginner", "OpenSource", "Web Development"]
-author: "STICKnoLOGIC"
+author:
+  name: "STICKnoLOGIC"
 cover: "https://cdn.sticknologic.is-a.dev/picography-moon-craters.jpg"
 date: "2025-10-05"
 social:

@@ -2,7 +2,8 @@
 title: "Dictionaries in Python for Beginners"
 description: "Learn to create and use dictionaries with a detailed phonebook example, practical tips, and advanced techniques."
 tags: ["Beginner", "OpenSource", "Python"]
-author: "Dwid4r"
+author:
+  name: "Dwid4r"
 date: "2025-10-01"
 social:
   github: "https://github.com/yourusername"

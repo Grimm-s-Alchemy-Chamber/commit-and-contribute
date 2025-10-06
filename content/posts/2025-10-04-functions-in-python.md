@@ -2,7 +2,8 @@
 title: "Functions in Python"
 description: "How to write reusable functions in Python."
 tags: ["Beginner", "OpenSource", "Python"]
-author: "harshitrwt"
+author:
+  name: "harshitrwt"
 date: "2025-10-04"
 social:
   github: "https://github.com/harshitrwt"

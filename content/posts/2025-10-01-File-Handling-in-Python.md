@@ -2,7 +2,8 @@
 title: "File Handling in Python"
 description: "Use built-in modules like math or random with a dice-rolling program."
 tags: ["Beginner", "OpenSource", "Python"]
-author: "prathamesh424"
+author: 
+  name: "prathamesh424"
 date: "2025-10-01"
 social:
   github: "prathamesh424"

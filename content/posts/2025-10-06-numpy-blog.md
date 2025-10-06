@@ -5,7 +5,7 @@ tags: ["AI","Python","DataScience","MachineLearning","NumPy","Pandas"]
 date: "2025-10-06"
 cover: "https://img.freepik.com/premium-photo/python-programming-languageman-using-laptop-computer-with-python-programming-icon-virtual-screen-application-web-development-concept_1296497-827.jpg" # Optional
 author: 
-  name: "abhijnaa"
+  name: "abhijnaaa"
 social:
   "github": "abhijnaaa"
 ---

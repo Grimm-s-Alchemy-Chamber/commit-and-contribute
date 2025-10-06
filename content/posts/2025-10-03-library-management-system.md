@@ -2,7 +2,8 @@
 title: "Guide to Developing a Simple Library Management System in Python"
 description: "Instructions for creating a book management system with classes and lists, including functions to add, remove, borrow, and search books."
 tags: ["Beginner", "OpenSource", "Python"]
-author: "Dwidar"
+author: 
+  name: "Dwidar"
 date: "2025-10-03"
 social:
   github: "https://github.com/DwiD4r"

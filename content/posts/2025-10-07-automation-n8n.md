@@ -5,7 +5,7 @@ tags: ["Automation", "n8n", "NoCode", "WorkflowAutomation"]
 date: "2025-10-07"
 cover: "https://miro.medium.com/v2/resize:fit:700/1*bbL_KkRby1qIjwPVdM0SCg.png" 
 author:
-  name: "Sachin"
+  name: "Sachin Patel"
 social:
   "github": "mugenkyou"
 ---

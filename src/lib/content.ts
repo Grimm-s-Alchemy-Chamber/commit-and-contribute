@@ -101,12 +101,19 @@ export function listAuthors(): Author[] {
 
 export function getAuthorBySlug(slug: string): Author | null {
     const filePath = path.join(AUTHORS_DIR, `${slug}.json`);
-    if (!fs.existsSync(filePath)) return null;
-    const json = JSON.parse(fs.readFileSync(filePath, "utf8"));
-    if (!json.avatar && json.social?.github) {
-        json.avatar = `https://github.com/${json.social.github}.png`;
+    if (fs.existsSync(filePath)) {
+        const json = JSON.parse(fs.readFileSync(filePath, "utf8"));
+        if (!json.avatar && json.social?.github) {
+            json.avatar = `https://github.com/${json.social.github}.png`;
+        }
+        return { slug, ...json } as Author;
     }
-    return { slug, ...json } as Author;
+
+    // Fallback: allow lookup by slugified author name (e.g., "sachin-patel")
+    const authors = listAuthors();
+    const target = slug.toLowerCase();
+    const match = authors.find((a) => a.slug.toLowerCase() === target || slugify(a.name) === target);
+    return match ?? null;
 }
 
 export function getAllTags(posts?: Post[]): string[] {

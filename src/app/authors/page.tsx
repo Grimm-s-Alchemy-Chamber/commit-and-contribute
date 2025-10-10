@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { listAuthors, slugify } from "@/lib/content";
+import { listAuthors } from "@/lib/content";
 
 export default function AuthorsPage() {
   const authors = listAuthors();
@@ -12,7 +12,7 @@ export default function AuthorsPage() {
         <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {authors.map((a) => (
             <li key={a.slug} className="rounded-lg border p-4 hover:shadow-sm transition-shadow">
-              <Link href={`/authors/${slugify(a.name)}`} className="flex items-center gap-3">
+              <Link href={`/authors/${a.slug}`} className="flex items-center gap-3">
                 
                 <img src={a.avatar || `https://source.unsplash.com/80x80/?portrait`} alt={a.name} className="h-12 w-12 rounded-full object-cover" />
                 <div>

@@ -1,7 +1,7 @@
 ---
 title: "Using AI for Smart Financial Management with LangChain and Vector Databases"
 description: "Learn how to build an AI-powered financial assistant that actually understands your spending patterns using LangChain, vector databases, and large language mo from architecture to production deployment."
-tags:["AI", "Finanace", "LangChain", "VectorDB", "Engineering"]
+tags: ["AI", "Finance", "LangChain", "VectorDB", "Engineering"]
 author:
   name: "afnan006"
 date: "2025-10-10"

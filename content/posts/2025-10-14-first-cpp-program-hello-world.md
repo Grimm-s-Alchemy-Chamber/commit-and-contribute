@@ -5,7 +5,7 @@ tags: ["C++", "Programming", "Beginner", "Tutorial", "Hello World"]
 author:
   name: "Siddharth Panditrao"
 date: "2025-10-14"
-cover: "https://unsplash.com/photos/a-close-up-of-a-sign-with-the-word-hello-hello-jxelyjTrWFg"
+cover: "https://plus.unsplash.com/premium_photo-1685086785054-d047cdc0e525?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2064"
 social:
   github: "WalkingDevFlag"
   twitter: "WalkingDevFlag"
